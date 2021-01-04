@@ -1,6 +1,6 @@
 
 application:
-  name: CHANGEME
+  name: strapi
   project: CHANGEME
   cpu: 800m
   ram: 512mb
@@ -18,6 +18,6 @@ databases:
 routers:
 - name: main
   routes:
-  - application_name: CHANGEME
+  - application_name: strapi
     paths:
     - /*
