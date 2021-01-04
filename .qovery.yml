@@ -1,0 +1,23 @@
+
+application:
+  name: CHANGEME
+  project: CHANGEME
+  cpu: 800m
+  ram: 512mb
+  start_timeout: 45s
+  publicly_accessible: true
+  storage:
+    - name: data
+      type: ssd
+      size: 5GB
+      mount_point: /srv/app
+databases:
+- type: postgresql
+  version: 12
+  name: my-psql
+routers:
+- name: main
+  routes:
+  - application_name: CHANGEME
+    paths:
+    - /*
