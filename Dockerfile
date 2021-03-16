@@ -1,5 +1,5 @@
-FROM strapi/strapi:3.4-alpine
+FROM strapi/strapi
 
 EXPOSE 1337
-
+CMD ["strapi", "build"]
 CMD ["strapi", "start"]
