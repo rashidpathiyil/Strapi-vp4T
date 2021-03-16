@@ -4,7 +4,7 @@ application:
   project: CHANGEME
   cpu: 800m
   ram: 512mb
-  start_timeout: 250s
+  start_timeout: 480s
   publicly_accessible: true
   storage:
     - name: data
