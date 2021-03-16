@@ -1,23 +1,24 @@
-
+---
 application:
-  name: strapi
-  project: CHANGEME
-  cpu: 800m
-  ram: 512mb
-  start_timeout: 480s
+  name: "strapi"
+  project: "strapi"
+  organization: "QoveryCommunity"
   publicly_accessible: true
+  cpu: "800m"
+  ram: "512mb"
+  start_timeout: "480s"
   storage:
-    - name: data
-      type: ssd
-      size: 5GB
-      mount_point: /srv/app
+  - name: "data"
+    size: "5GB"
+    type: "ssd"
+    mount_point: "/srv/app"
 databases:
-- type: postgresql
-  version: 12
-  name: my-psql
+- type: "POSTGRESQL"
+  name: "my-psql"
+  version: "12"
 routers:
-- name: main
+- name: "main"
   routes:
-  - application_name: strapi
+  - application_name: "strapi"
     paths:
-    - /*
+    - "/*"
